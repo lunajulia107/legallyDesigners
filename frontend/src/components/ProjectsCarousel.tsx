@@ -14,34 +14,34 @@ const projects: Project[] = [
     id: 1,
     title: 'Indicart',
     category: 'Design Visual',
-    imageUrl: '',
-    indication: "Descrição.",
+    imageUrl: 'images/home/indicart.png',
+    indication: "Criação de identidade visual e desenvolvimento de uma landing page fictícia voltada ao nicho artístico.",
     link: '#'
   },
   {
     id: 2,
     title: 'Lumine',
     category: 'Gestão de Redes Sociais',
-    imageUrl: '',
-    indication: "Descrição.",
+    imageUrl: 'images/home/lumine.png',
+    indication: "Projeto real voltado ao nicho de estética, com produção de vídeos e gestão de redes sociais, focando no posicionamento digital.",
     link: '#'
   },
   {
     id: 3,
     title: 'Kiwi Estética',
     category: 'Sites Estratégicos',
-    imageUrl: '',
-    indication: "Descrição.",
+    imageUrl: 'images/home/kiwi-estetica.png',
+    indication: "Criação de identidade visual e sistema fictício de agendamento online para o nicho de estética.",
     link: '#'
   },
   {
     id: 4,
     title: 'Boom Design',
     category: 'Todas',
-    imageUrl: '',
-    indication: "Descrição.",
+    imageUrl: 'images/home/boomDesign.png',
+    indication: "Projeto autoral para divulgação de vivências da faculdade, com desenvolvimento de identidade visual e conteúdo para TikTok.",
     link: '#'
-  } 
+  }
 ];
 
 function ProjectsCarousel() {
@@ -104,7 +104,7 @@ function ProjectsCarousel() {
       </div> 
 
       <div className="container container-sm-fluid mt-4 overflow-hidden px-0">
-          <ul className="flex-nowrap row ps-1">
+          <ul className="flex-nowrap row ps-1 ps-lg-0">
               {getVisibleProjects().map((project) => (
                   <li key={project.id} className="col-12 col-md-5 col-lg-4">
                       <div className="align-items-start box-transparent d-flex flex-column h-100 p-4 rounded-4 w-100"> 
@@ -123,12 +123,14 @@ function ProjectsCarousel() {
                           <p>{project.indication}</p>
                             
                           <div className="d-flex justify-content-end mt-3 w-100">
-                              <a
+                              {/* <a
                               className="btn btn-purple m-0 rounded-5 text-decoration-none text-white"
+                              disabled
                               href={project.link}
                               >
-                                  Mais detalhes <i className="bi bi-arrow-right ms-2 text-white"></i>
-                              </a>
+                                  Em breve mais detalhes <i className="bi bi-arrow-right ms-2 text-white"></i>
+                              </a> */}
+                              <small className="fw-medium mb-3 text-uppercase text-white">Em breve mais detalhes</small>
                           </div> 
                       </div>
                   </li>

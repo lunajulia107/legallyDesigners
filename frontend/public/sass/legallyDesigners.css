@@ -497,8 +497,13 @@ select {
 body {
   background-image: url("/images/home/bg.png");
   background-repeat: no-repeat;
-  background-size: cover !important;
   background-size: contain !important;
+}
+@media (max-width: 991px) {
+  body {
+    background-size: 156% auto !important;
+    background-position: right top;
+  }
 }
 
 /* Header */
@@ -571,6 +576,10 @@ footer .a-social-medias {
   min-width: 12px;
   height: 12px;
   width: 12px;
+}
+
+#ul-sales li {
+  background: rgba(0, 0, 0, 0.1882352941);
 }
 
 #box-call-to-action {

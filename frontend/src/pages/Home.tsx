@@ -167,8 +167,8 @@ const Home: React.FC = () => {
             <div className="col-lg-6">
               <figure className="bg-white col-lg-6 rounded-4" style={{ height: "256px" }}>
                 <img
-                  src="/images/home/sobre-equipe.jpg"
-                  alt="Equipe trabalhando"
+                  src="/images/home/girs-united.png"
+                  alt="União"
                   className="object-fit-cover w-100 h-100 rounded-4"
                 />
               </figure>
@@ -244,8 +244,8 @@ const Home: React.FC = () => {
               {/* Imagem de fundo */}
               <div className="col-lg-8 position-relative" style={{ height: "500px", zIndex: 1 }}>
                 <img
-                  src="/images/home/fundo-sobre.jpg"
-                  alt="Sobreposição com imagem de fundo"
+                  src="/images/home/work-space.png"
+                  alt="Ambiente de trabalho."
                   className="bg-white d-flex h-100 object-fit-cover position-relative rounded-4 w-100"
                 />
               </div>
@@ -316,8 +316,8 @@ const Home: React.FC = () => {
           mas precisa de uma <span className="fw-bolder">marca à altura</span>.
         </h2>
 
-        <div className="bg-purple p-5 rounded-5 w-100">
-          <div className="h-100 row" style={{ minHeight: 432 }}>
+        <div className="bg-purple rounded-5 w-100">
+          <div className="h-100 p-5 row" style={{ minHeight: 432 }}>
             <div className="col-lg-6 d-flex flex-column justify-content-between">
               <h3>
                 Se você empreende, presta serviços, vende produtos ou trabalha com criatividade, a gente entende o seu universo.
@@ -328,7 +328,7 @@ const Home: React.FC = () => {
             </div>
 
             <div className="col-lg-6 d-flex flex-column justify-content-between">
-              <ul className="d-flex flex-wrap justify-content-end" style={{ gap: "0.5rem" }}>
+              <ul className="d-flex flex-wrap justify-content-end" id="ul-sales" style={{ gap: "0.5rem" }}>
                 <li className="badge fw-normal">Feed profissional e visualmente atrativo</li>
                 <li className="badge fw-normal">Conteúdos estratégicos e com identidade</li>
                 <li className="badge fw-normal">Reels e vídeos com propósito</li>

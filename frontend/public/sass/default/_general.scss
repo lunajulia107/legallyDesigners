@@ -34,8 +34,12 @@ select {
 body {
   background-image: url("/images/home/bg.png");
   background-repeat: no-repeat;
-  background-size: cover !important;    
-  background-size: contain !important;
+  background-size: contain !important;  
+
+  @media (max-width: 991px) {
+    background-size: 156% auto !important; 
+    background-position: right top;
+  }
 }
 
 /* Header */ 
@@ -114,7 +118,11 @@ footer {
   min-width: 12px;
   height: 12px;
   width: 12px; 
-} 
+}  
+
+#ul-sales li {
+  background: #00000030;
+}
 
 #box-call-to-action {
   background-image: url(/images/home/polygon.png);

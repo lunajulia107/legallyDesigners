@@ -1,0 +1,35 @@
+// Fonts
+$font-urbanist: "Urbanist", sans-serif;
+
+// Colors  
+$colors: (
+  "black": #000000,
+  "green": #0ca144, 
+  "pink": #ff0eee, 
+  "purple": #6a00f3,
+  "purple-dark": #5400c2,
+  "water-green": #01d1fd, 
+  "whiteOpacity2": #050505
+);
+  
+// Font Sizes (rem)
+$rem-sizes: (
+  2: 0.125rem,
+  4: 0.25rem,
+  8: 0.5rem,
+  10: 0.625rem,
+  12: 0.75rem,
+  14: 0.875rem,
+  16: 1rem,
+  20: 1.25rem,
+  24: 1.5rem,
+  32: 2rem,
+  40: 2.5rem,
+  48: 3rem,
+  56: 3.5rem,
+  64: 4rem,
+  72: 4.5rem,
+  80: 5rem,
+  88: 5.5rem,
+  96: 6rem
+);

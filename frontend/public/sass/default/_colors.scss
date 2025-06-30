@@ -1,0 +1,65 @@
+@each $nome, $cor in $colors {
+  .bg-#{$nome} {
+    background-color: $cor;
+  }
+
+  .border-#{$nome} {
+    border-color: $cor !important;
+  }
+
+  .btn-#{$nome} {
+    background-color: $cor !important;
+    transition: all 0.3s ease;
+
+    &:disabled { 
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    &:not(:disabled) {
+      &:focus {
+        background-color: darken($cor, 25%) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+        transform: scale(1.01);
+        outline: none;
+      }
+
+      &:hover {
+        background-color: darken($cor, 20%) !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .btn-border-#{$nome} {
+    border: 2px solid $cor !important; 
+    transition: all 0.3s ease;
+
+    &:disabled { 
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    &:not(:disabled) {
+      &:focus {
+        background-color: darken($cor, 25%) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  
+        transform: scale(1.01);
+        outline: none;
+      }
+
+      &:hover {
+        background-color: darken($cor, 20%) !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .text-#{$nome} {
+    color: $cor !important;
+  }
+}
+
+

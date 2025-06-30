@@ -437,13 +437,14 @@ const Home: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={eighthSection.controls}
         transition={{ duration: 0.6 }}
-        className="container mb-5 mt-5 pb-5 pt-5"> 
+        className="container mb-5 mt-5 pb-5 pt-5"
+        > 
         <h2 className="display-5 fw-normal mb-5 text-center">
           Vamos fazer sua <span className="fw-bolder">marca brilhar?</span>  
         </h2>
 
-        <div className="box-transparent p-5 rounded-5 w-100">
-          <div className="h-100 row" style={{ minHeight: 250 }}>
+        <div className="box-transparent rounded-5 w-100" id="box-call-to-action">
+          <div className="h-100 p-5 row" style={{ minHeight: 250 }}>
             <div className="col-lg-6 d-flex flex-column mb-5">
               <h3 className="mb-3">
                 Pronta para elevar sua marca com um time criativo e estratégico?
@@ -464,7 +465,7 @@ const Home: React.FC = () => {
               </div> 
             </div>
 
-            <div className="align-items-end col-lg-6 d-flex justify-content-end">
+            <div className="align-items-end col-lg-6 d-flex justify-content-end"> 
               <h5 className="fw-medium text-end">Legally Designers</h5>
             </div>
           </div>

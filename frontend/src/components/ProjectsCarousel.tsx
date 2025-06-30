@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Project {
   id: number;
@@ -12,36 +12,36 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Hidratação Facial',
+    title: 'Indicart',
     category: 'Design Visual',
-    imageUrl: '/images/camila.png',
-    indication: "Pele ressecada, sem viço ou com aspecto cansado.",
-    link: '/catalogo#hidratacao-facial'
+    imageUrl: '',
+    indication: "Descrição.",
+    link: '#'
   },
   {
     id: 2,
-    title: 'Limpeza de Pele',
+    title: 'Lumine',
     category: 'Gestão de Redes Sociais',
-    imageUrl: '/images/samara.png',
-    indication: "Controle de oleosidade, acne e remoção de cravos.",
-    link: '/catalogo#limpeza-pele'
+    imageUrl: '',
+    indication: "Descrição.",
+    link: '#'
   },
   {
     id: 3,
-    title: 'Drenagem Linfática',
+    title: 'Kiwi Estética',
     category: 'Sites Estratégicos',
-    imageUrl: '/images/julia.png',
-    indication: "Retenção de líquidos, inchaço e melhora da circulação.",
-    link: '/catalogo#drenagem-linfatica'
+    imageUrl: '',
+    indication: "Descrição.",
+    link: '#'
   },
   {
     id: 4,
-    title: 'Drenagem Linfática',
-    category: 'Sites Estratégicos',
-    imageUrl: '/images/julia.png',
-    indication: "Retenção de líquidos, inchaço e melhora da circulação.",
-    link: '/catalogo#drenagem-linfatica'
-  }
+    title: 'Boom Design',
+    category: 'Todas',
+    imageUrl: '',
+    indication: "Descrição.",
+    link: '#'
+  } 
 ];
 
 function ProjectsCarousel() {
@@ -68,10 +68,10 @@ function ProjectsCarousel() {
     );
   };
 
-  const getVisibleProjects = (): Service[] => {
+  const getVisibleProjects = (): Project[] => {
     const numCards = projects.length;
     const cardsToShow = 4;
-    const visible: Service[] = [];
+    const visible: Project[] = [];
 
     for (let i = 0; i < cardsToShow; i++) {
       visible.push(projects[(currentIndex + i) % numCards]);

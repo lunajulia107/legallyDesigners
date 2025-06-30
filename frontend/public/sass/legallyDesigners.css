@@ -573,6 +573,19 @@ footer .a-social-medias {
   width: 12px;
 }
 
+#box-call-to-action {
+  background-image: url(/images/home/polygon.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto !important;
+  background-position: 360px center;
+}
+@media (max-width: 991px) {
+  #box-call-to-action {
+    background-size: 156% auto !important;
+    background-position: 198px top;
+  }
+}
+
 #whatsapp-popup {
   position: fixed !important;
   bottom: 88px;

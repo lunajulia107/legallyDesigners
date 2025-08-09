@@ -14,7 +14,7 @@ const WhatsappPopup: React.FC = () => {
   });
 
   const popupRef = useRef<HTMLDivElement>(null);
-  const whatsappNumber = "5511983723177";
+  const whatsappNumber = "+5511947724176";
 
   const togglePopup = () => {
     setPopupVisible((prev) => !prev);
@@ -22,12 +22,17 @@ const WhatsappPopup: React.FC = () => {
 
   const formatPhoneNumber = (value: string): string => {
     const cleaned = value.replace(/\D/g, "");
+
     if (cleaned.length <= 10) {
-      return cleaned.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+      // limita a 10 dígitos para telefone fixo ou celular com 8 dígitos
+      const limited = cleaned.slice(0, 10);
+      return limited.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3").trimEnd("-");
     } else {
-      return cleaned.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
+      // limita a 11 dígitos para celular com 9 dígitos
+      const limited = cleaned.slice(0, 11);
+      return limited.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3").trimEnd("-");
     }
-  };
+  }; 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -132,7 +137,7 @@ const WhatsappPopup: React.FC = () => {
                 type="tel"
                 id="phone-number"
                 className="form-control"
-                placeholder="(11) 91234-5678"
+                placeholder="(11) 99999-9999"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(formatPhoneNumber(e.target.value))}
               />

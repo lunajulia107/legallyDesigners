@@ -1,23 +1,37 @@
 <?php
 class Database {
-    private $host = "localhost";
-    private $db_name = "legallyDesigners";
-    private $username = "root";
-    private $password = "Lupita@107";
-    public $conn;
+    private $host;
+    private $db_name;
+    private $username;
+    private $password;
+    private $conn;
+
+    public function __construct() {
+        $this->host = getenv('DB_HOST');
+        $this->db_name = getenv('DB_NAME');
+        $this->username = getenv('DB_USER');
+        $this->password = getenv('DB_PASS');
+    }
 
     public function connect() {
-        $this->conn = null;
+        if ($this->conn) {
+            return $this->conn;
+        }
 
         try {
             $this->conn = new PDO(
-                "mysql:host={$this->host};dbname={$this->db_name}",
+                "mysql:host={$this->host};dbname={$this->db_name};charset=utf8mb4",
                 $this->username,
-                $this->password
+                $this->password,
+                [
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                    PDO::ATTR_EMULATE_PREPARES => false,
+                ]
             );
-            $this->conn->exec("set names utf8");
         } catch (PDOException $e) {
-            echo "Erro de conexão: " . $e->getMessage();
+            error_log("Erro de conexão ao DB: " . $e->getMessage());
+            die("Erro ao conectar ao banco de dados.");
         }
 
         return $this->conn;

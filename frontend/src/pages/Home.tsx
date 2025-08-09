@@ -93,9 +93,9 @@ const Home: React.FC = () => {
 
         <div className="align-items-end d-flex flex-wrap gap-3 justify-content-between mt-3 pt-3">
           <a
-            href="https://wa.me/5511983723177"
+            href="mailto:legallyDesigners@gmail.com"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" 
             className="btn btn-purple fs-5 p-2 pe-4 ps-4 rounded-5 text-decoration-none text-white"
           >
             Quero impulsionar
@@ -124,8 +124,8 @@ const Home: React.FC = () => {
 
           <div className="bg-white col-lg-4 rounded-4">
             <img
-              src="/images/home/exemplo.jpg"
-              alt="Imagem de destaque"
+              src="/images/home/"
+              alt=""
               style={{ height: "100px" }}
             />
           </div>
@@ -165,10 +165,14 @@ const Home: React.FC = () => {
 
           <div className="row mt-5">
             <div className="col-lg-6">
-              <figure className="bg-white col-lg-6 rounded-4" style={{ height: "256px" }}>
+              <figure className="col-lg-6 rounded-4" style={{ height: "256px" }}>
                 <img
-                  src="/images/home/girs-united.png"
-                  alt="União"
+                  src="/images/home/girlsUnited.png"
+                  alt="Duas mãos quase se tocando, com os dedos indicadores 
+                  apontados um para o outro, numa pose que lembra a famosa cena da 'Criação de Adão' 
+                  de Michelangelo. O fundo é iluminado com luzes em tons de roxo e rosa, criando um 
+                  efeito dramático e moderno, com iluminação suave que destaca as mãos contra o cenário escuro. 
+                  A atmosfera transmite uma sensação de conexão, tensão ou expectativa."
                   className="object-fit-cover w-100 h-100 rounded-4"
                 />
               </figure>
@@ -185,7 +189,7 @@ const Home: React.FC = () => {
 
               <div className="d-flex flex-wrap gap-4 mb-5 mt-3">
                 <a
-                  href="https://wa.me/5511983723177"
+                  href="mailto:legallyDesigners@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-purple fs-5 p-2 pe-4 ps-4 rounded-5 text-decoration-none text-white"
@@ -239,16 +243,7 @@ const Home: React.FC = () => {
                     </p>
                   </div>
                 </li>
-              </ul>
-
-              {/* Imagem de fundo */}
-              <div className="col-lg-8 position-relative" style={{ height: "500px", zIndex: 1 }}>
-                <img
-                  src="/images/home/work-space.png"
-                  alt="Ambiente de trabalho."
-                  className="bg-white d-flex h-100 object-fit-cover position-relative rounded-4 w-100"
-                />
-              </div>
+              </ul> 
             </div>
           </div>
         </motion.section>
@@ -268,7 +263,7 @@ const Home: React.FC = () => {
             <div className="col-lg-4">
               <div className="box-transparent h-100 p-4 rounded-4 text-center d-flex flex-column">
                 <div className="box-image mb-4">
-                  <img src="images/home/samara.png" alt="Samara Duarte" />
+                  <img src="images/home/samara.png" alt="Samara Duarte." />
                 </div>
                 <h3 className="fw-medium mb-2">Samara Duarte</h3>
                 <p className="lead">
@@ -280,7 +275,7 @@ const Home: React.FC = () => {
             <div className="col-lg-4">
               <div className="box-transparent h-100 p-4 rounded-4 text-center d-flex flex-column">
                 <div className="box-image mb-4">
-                  <img src="images/home/camila.png" alt="Camila Bonilha" />
+                  <img src="images/home/camila.png" alt="Camila Bonilha." />
                 </div>
                 <h3 className="fw-medium mb-2">Camila Bonilha</h3>
                 <p className="lead">
@@ -292,7 +287,7 @@ const Home: React.FC = () => {
             <div className="col-lg-4">
               <div className="box-transparent h-100 p-4 rounded-4 text-center d-flex flex-column">
                 <div className="box-image mb-4">
-                  <img src="images/home/julia.png" alt="Julia Rodrigues" />
+                  <img src="images/home/julia.png" alt="Julia Rodrigues." />
                 </div>
                 <h3 className="fw-medium mb-2">Julia Rodrigues</h3>
                 <p className="lead">
@@ -368,7 +363,8 @@ const Home: React.FC = () => {
               </div>
 
               <div style={{ marginBottom: -50, marginLeft: -30 }}>
-                <img src="images/home/color-palette.png" alt="Paleta de cores" />
+                <img src="images/home/colorPalette.png" alt="Forma abstrata em 3D com cores degradê em 
+                tons de rosa, roxo e azul, com brilho e relevo." />
               </div>
             </div>
           </div>
@@ -385,7 +381,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="d-flex justify-content-end">
-                <img src="images/home/phone.png" alt="Celular" />
+                <img src="images/home/phone.png" alt="Smartphone com a tela exibindo formas 3D sobrepostas, formando o isotipo da Legally 
+                Designers em tons de rosa, roxo e azul, com efeito de brilho." />
               </div>
             </div>
           </div>
@@ -402,7 +399,8 @@ const Home: React.FC = () => {
               </div>
 
               <div className="d-flex justify-content-end">
-                <img src="images/home/window.png" alt="Janela" />
+                <img src="images/home/window.png" alt="Janela de navegador estilizada em 3D com cores 
+                degradê em tons de rosa, azul e roxo, com relevo e três botões circulares no canto superior esquerdo." />
               </div>
             </div>
           </div>
@@ -419,7 +417,8 @@ const Home: React.FC = () => {
         <div className="row"> 
           <div className="col-lg-7 mb-5"> 
               <h2 className="display-5 fw-normal">
-                Projetos <span className="fw-bolder">criativos</span> para marcas com <span className="fw-bolder">identidade e visão</span>  
+                Projetos <span className="fw-bolder">criativos</span> para marcas com 
+                <span className="fw-bolder">identidade e visão</span>  
               </h2>  
           </div>
           <div className="col-lg-5">
@@ -454,7 +453,7 @@ const Home: React.FC = () => {
               </p>
               <div className="mt-4">
                 <a
-                  href="https://wa.me/5511983723177"
+                  href="mailto:legallyDesigners@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-purple fs-5 p-2 pe-4 ps-4 rounded-5 text-decoration-none text-white"

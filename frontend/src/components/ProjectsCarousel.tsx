@@ -14,7 +14,7 @@ const projects: Project[] = [
     id: 1,
     title: 'Indicart',
     category: 'Design Visual',
-    imageUrl: 'images/home/indicart.png',
+    imageUrl: 'images/home/projects/indicart.png',
     indication: "Criação de identidade visual e desenvolvimento de uma landing page fictícia voltada ao nicho artístico.",
     link: '#'
   },
@@ -22,7 +22,7 @@ const projects: Project[] = [
     id: 2,
     title: 'Lumine',
     category: 'Gestão de Redes Sociais',
-    imageUrl: 'images/home/lumine.png',
+    imageUrl: 'images/home/projects/lumine.png',
     indication: "Projeto real voltado ao nicho de estética, com produção de vídeos e gestão de redes sociais, focando no posicionamento digital.",
     link: '#'
   },
@@ -30,7 +30,7 @@ const projects: Project[] = [
     id: 3,
     title: 'Kiwi Estética',
     category: 'Sites Estratégicos',
-    imageUrl: 'images/home/kiwi-estetica.png',
+    imageUrl: 'images/home/projects/kiwiEstetica.png',
     indication: "Criação de identidade visual e sistema fictício de agendamento online para o nicho de estética.",
     link: '#'
   },
@@ -38,7 +38,7 @@ const projects: Project[] = [
     id: 4,
     title: 'Boom Design',
     category: 'Todas',
-    imageUrl: 'images/home/boomDesign.png',
+    imageUrl: 'images/home/projects/boomDesign.png',
     indication: "Projeto autoral para divulgação de vivências da faculdade, com desenvolvimento de identidade visual e conteúdo para TikTok.",
     link: '#'
   }

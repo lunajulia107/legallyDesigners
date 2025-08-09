@@ -91,3 +91,12 @@ npm run dev
 
 * Para dúvidas ou sugestões, entre em contato comigo:
 * Email: rodriguesjuliaw23@gmail.com.
+
+---
+
+### Autores
+
+UX Writer/UI - Camila Bonilha
+UX/UI & Desenvolvimento Full-stack - Julia Gomes  
+Designer - Samara Duarte 
+

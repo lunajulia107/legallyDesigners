@@ -10,7 +10,7 @@
 
 ## Sobre o Projeto
 
-⚙️ O projeto é dividido em duas partes principais: o backend em PHP e o frontend em React com TypeScript, utilizando Vite como bundler.
+📄 O projeto é dividido em duas partes principais: o backend em PHP e o frontend em React com TypeScript, utilizando Vite como bundler.
 
 ---
 
@@ -19,36 +19,38 @@
 ```
 legallyDesigners/
 │
-├── backend/                🖥️ Código do backend (API)
-│   ├── config/             ⚙️ Configurações do banco de dados, ambiente etc.
-│   ├── controllers/        🎛️ Controladores (ex: ContatoController.php)
-│   ├── models/             📦 Modelos do banco de dados (ex: Contato.php)
+├── backend/                Código do backend (API)
+│   ├── config/             Configurações do banco de dados, ambiente etc.
+│   ├── controllers/        Controladores (ex: ContatoController.php)
+│   ├── models/             Modelos do banco de dados (ex: Contato.php)
 │
-├── frontend/               💻 Código do frontend (React + TypeScript)
-│   ├── node_modules/       📚 Dependências do frontend
-│   ├── public/             🗂️ Arquivos públicos estáticos
-│   ├── src/                💾 Código fonte do frontend
-│   │   ├── components/     🔧 Componentes React reutilizáveis
-│   │   ├── pages/          📄 Páginas da aplicação
-│   │   ├── App.tsx         🚀 Componente principal
-│   │   └── main.tsx        🎯 Ponto de entrada do React
-│   ├── package.json        📦 Configuração do npm do frontend
-│   ├── vite.config.ts      ⚙️ Configuração do Vite
-│   └── tsconfig.json       📜 Configuração do TypeScript
+├── frontend/               Código do frontend (React + TypeScript)
+│   ├── node_modules/       Dependências do frontend
+│   ├── public/             Arquivos públicos estáticos
+│   ├── src/                Código fonte do frontend
+│   │   ├── components/     Componentes React reutilizáveis
+│   │   ├── pages/          Páginas da aplicação
+│   │   ├── App.tsx         Componente principal
+│   │   └── main.tsx        Ponto de entrada do React
+│   ├── package.json        Configuração do npm do frontend
+│   ├── vite.config.ts      Configuração do Vite
+│   └── tsconfig.json       Configuração do TypeScript
 │
-├── .gitignore              🚫 Arquivos e pastas ignorados pelo Git
-└── README.md               📖 Este arquivo
+├── .gitignore              Arquivos e pastas ignorados pelo Git
+└── README.md               Este arquivo
 ```
 
 ---
 
 ## Tecnologias Utilizadas
 
-* 🖥️ **Backend:** PHP com arquitetura MVC simples
-* ⚛️ **Frontend:** React + TypeScript
-* 📦 **Bundler:** Vite
-* 🛢️ **Banco de Dados:** MySQL (configuração no backend)
-* 📦 **Gerenciamento de dependências:** npm/yarn para frontend
+💻
+
+* **Backend:** PHP com arquitetura MVC simples
+* **Frontend:** React + TypeScript
+* **Bundler:** Vite
+* **Banco de Dados:** MySQL (configuração no backend)
+* **Gerenciamento de dependências:** npm/yarn para frontend
 
 ---
 
@@ -103,5 +105,3 @@ legallyDesigners/
 * ✍️ UX Writer/UI - Camila Bonilha
 * 👩‍💻 UX/UI & Desenvolvimento Full-stack - Julia Gomes
 * 🎨 Designer - Samara Duarte
-
-Quer que eu faça alguma personalização diferente?

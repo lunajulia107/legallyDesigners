@@ -103,5 +103,4 @@ Para dúvidas ou sugestões, entre em contato comigo:
 * UX Writer/UI - Camila Bonilha
 * UX/UI & Desenvolvimento Full-stack - Julia Gomes
 * Designer - Samara Duarte
-
---- 
+ 

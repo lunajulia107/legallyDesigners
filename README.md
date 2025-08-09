@@ -4,7 +4,7 @@ Site oficial da **Legally Designers**, uma agência criativa especializada em de
 
 * Design Visual
 * Gestão de Redes Sociais
-* Sites Estratégicos  
+* Sites Estratégicos
 
 ---
 
@@ -44,11 +44,11 @@ legallyDesigners/
 
 ## Tecnologias Utilizadas
 
-* Backend: PHP com arquitetura MVC simples
-* Frontend: React + TypeScript
-* Bundler: Vite
-* Banco de Dados: MySQL (configuração no backend)
-* Gerenciamento de dependências: npm/yarn para frontend
+* **Backend:** PHP com arquitetura MVC simples
+* **Frontend:** React + TypeScript
+* **Bundler:** Vite
+* **Banco de Dados:** MySQL (configuração no backend)
+* **Gerenciamento de dependências:** npm/yarn para frontend
 
 ---
 
@@ -57,46 +57,51 @@ legallyDesigners/
 ### 1. Configurar o Backend
 
 * Acesse a pasta `backend`
-* Crie um arquivo `.env` para configurar conexão com banco, por exemplo:
 
-```
-DB_HOST=localhost
-DB_NAME=nome_banco
-DB_USER=root
-DB_PASS=sua_senha
-```
+* Crie um arquivo `.env` para configurar a conexão com o banco, por exemplo:
 
-* Configure seu servidor local PHP (XAMPP, WAMP) apontando para a pasta backend
+  ```
+  DB_HOST=localhost
+  DB_NAME=nome_banco
+  DB_USER=root
+  DB_PASS=sua_senha
+  ```
+
+* Configure seu servidor local PHP (XAMPP, WAMP) apontando para a pasta `backend`
+
 * Certifique-se que o banco MySQL está rodando e configurado com o banco
 
 ### 2. Rodar o Frontend
 
 * Acesse a pasta `frontend`
+
 * Instale as dependências:
 
-```bash
-npm install
-```
+  ```bash
+  npm install
+  ```
 
 * Inicie o servidor de desenvolvimento:
 
-```bash
-npm run dev
+  ```bash
+  npm run dev
+  ```
 
-* O frontend estará disponível em `http://localhost:numeroporta` 
+* O frontend estará disponível em `http://localhost:<numero_da_porta>`
 
 ---
 
 ## Contato
 
-* Para dúvidas ou sugestões, entre em contato comigo:
-* Email: rodriguesjuliaw23@gmail.com.
+Para dúvidas ou sugestões, entre em contato comigo:
+**Email:** [rodriguesjuliaw23@gmail.com](mailto:rodriguesjuliaw23@gmail.com)
 
 ---
 
 ### Autores
 
-UX Writer/UI - Camila Bonilha
-UX/UI & Desenvolvimento Full-stack - Julia Gomes  
-Designer - Samara Duarte 
+* UX Writer/UI - Camila Bonilha
+* UX/UI & Desenvolvimento Full-stack - Julia Gomes
+* Designer - Samara Duarte
 
+--- 

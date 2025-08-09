@@ -83,7 +83,7 @@ npm install
 ```bash
 npm run dev
 
-* O frontend estará disponível em `http://localhost:portal` 
+* O frontend estará disponível em `http://localhost:numeroporta` 
 
 ---
 

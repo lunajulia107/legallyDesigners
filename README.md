@@ -98,7 +98,7 @@ Para dúvidas ou sugestões, entre em contato comigo:
 
 ---
 
-### Autores
+## Autores
 
 * UX Writer/UI - Camila Bonilha
 * UX/UI & Desenvolvimento Full-stack - Julia Gomes
